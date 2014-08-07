@@ -1,0 +1,390 @@
+/*
+Theme Name: Opera
+Description: Used to style the TinyMCE editor.
+*/
+
+/* ==========================================================================
+   Font Awesome icon font. http://gregoryloucas.github.com/Font-Awesome-More
+   ========================================================================== */
+
+@import "css/font-awesome.min.css";
+
+
+/* ==========================================================================
+   Basic page styles
+   ========================================================================== */
+
+html {
+    font-size: 100%;
+}
+
+html .mceContentBody {
+    max-width: 790px;
+}
+
+body {
+    color: #333;
+    font: 16px/1.5 'Roboto', Helvetica, Arial, sans-serif;
+    font-size:10px;
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    vertical-align: baseline;
+}
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #333;
+    margin-top: 0;
+}
+
+h1 { 
+    margin-bottom: 15px;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+h2 { 
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 28px;
+    line-height: 1.1666;
+}
+
+h3 { 
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 24px;
+    line-height: 1.2857;
+}
+
+
+h4 { 
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+h5 { 
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+h6 { 
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.2142;
+}
+
+hr {
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin: 24px;
+    margin-bottom:15px;
+}
+
+
+/* ==========================================================================
+   Text elements
+   ========================================================================== */
+
+p {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul, ol {
+    margin: 0 0 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: disc outside;
+}
+
+ol {
+    list-style: decimal outside;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+    margin-bottom: 0;
+}
+
+li {
+    margin: 0 0 0 28px;
+}
+
+dl {
+    margin: 0 24px;
+}
+
+dt {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+dd {
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+b, strong { 
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+em {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+cite {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+}
+
+big {
+    font-size: 22px;
+}
+
+.mceContentBody blockquote {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    border-left: 5px solid #333;
+    margin: 0 0 18px 20px;
+    padding: 0 0 0 16px;
+}
+
+pre {
+    border-radius: 3px;
+    color: #555;
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-size: 12px;
+    padding: 0 3px 2px;
+    overflow: auto;
+}
+
+code,
+kbd,
+samp,
+var {
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    padding: 2px 4px;
+}
+
+abbr,
+acronym,
+dfn {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+
+address {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    display: block;
+}
+
+del {
+    color: #333;
+}
+
+ins {
+    background: none repeat scroll 0 0 #FFF9C0;
+    text-decoration: none;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+input[type="text"],
+textarea {
+    font-family: inherit;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 8px;
+    width: 100%;
+}
+
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a,
+a em,
+a strong { 
+    color: #333;
+    outline: none;
+}
+
+a:visited { 
+    color: #666;
+}
+
+a:focus { 
+    outline: thin dotted;
+    color: #2997ab;
+}
+
+a:hover, a:active { 
+    outline: 0;
+    color: #2997ab;
+}
+
+
+/* ==========================================================================
+   Alignment
+   ========================================================================== */
+
+.alignleft {
+    display: inline;
+    float: left;
+    margin: 0 20px 16px 0;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin: 0 0 16px 20px;
+}
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+table {
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    line-height: 2;
+    margin: 0 0 24px;
+    width: 100%;
+}
+
+tr th {
+    color: #636363;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2;
+    text-align: left;
+}
+
+td {
+    border-top: 1px solid #ccc !important;
+    padding: 6px 10px 6px 0;
+}
+
+
+/* ==========================================================================
+   Images
+   ========================================================================== */
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+img.size-full {
+    width: auto/9; /* Prevent stretching of full-size images in IE8 */
+}
+
+img[class*="wp-image-"] {
+    height: auto;
+    max-width: 100%;
+}
+
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+    height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+img.mceWPnextpage {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+img.wp-smiley {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+.wp-caption {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #777;
+    text-align: center;
+}
+
+.wp-caption-dt {
+    margin: 0;
+}
+
+.wp-caption .wp-caption-text,
+.wp-caption-dd {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #777;
+    text-align: center;
+}
